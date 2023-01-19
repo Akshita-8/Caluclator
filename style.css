@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#091921
+}
+.caluclator{
+    position: relative;
+    display:grid;
+}
+.caluclator .value{
+    grid-column: span 4;
+    height:100px;
+    text-align:right;
+    border:none;
+    padding:10px;
+    font-size:18px;
+}
+.caluclator span{
+    display:grid;
+    width:60px;
+    height:60px;
+    color:azure;
+    background:#0c2835;
+    place-items: center;
+    border:2px solid rgba(0,0,0,.1);
+}
+.caluclator span:active{
+    background-color:cornflowerblue;
+}
+.caluclator span.clear{
+    grid-column: span 2;
+    width:120px;
+    background-color:crimson;
+}
+.caluclator span.plus{
+    grid-row: span 2;
+    height:120px;
+}
+.caluclator span.equal{
+     background-color: cadetblue;
+}
